@@ -5,19 +5,15 @@
 4. stampare il messagio appropriato in pagina
 */
 
-//creare una lista utenti: creo un array
 const autorizedUser =['bim', 'bum', 'bam'];
 
-//const outputMail =document.getElementById('output-email');
-
-//quando chiedo i dati? al clicc di un pulsante:
+//chiedo i dati al clicc di un pulsante:
 //1. 2.
-const accessBtn =document.querySelector('button')
+const accessBtn =document.querySelector('#accesso')
 
 accessBtn.addEventListener('click', function(){
 
-  
-  const userName = prompt('inserisci il tuo user Name, PS: prova in camel case il tuo nome e l\'iniziale del tuo cognome!')
+  const userName = prompt('inserisci la tua user utente PS: prova in camel case il tuo nome e l\'iniziale del tuo cognome!')
 
   let checkUser = false;
 
@@ -39,6 +35,29 @@ accessBtn.addEventListener('click', function(){
   }
 
 })
+
+//dadi
+
+const numberList =[1, 2, 3, 4, 5, 6]
+
+console.log('lista lenght', numberList.length);
+
+const btnGiocaOra =document.querySelector('#btn-gioca')
+
+btnGiocaOra.addEventListener('click', function(){
+
+
+  let randomHuman = Math.floor(Math.random() * numberList.length);
+  const numPlayerEstratto = numberList[randomHuman];
+  console.log('num human',numPlayerEstratto);
+
+
+  let randomPc = Math.floor(Math.random() * numberList.length);
+  const numPcEstratto = numberList[randomPc];
+  console.log('num pc',numPcEstratto);
+
+})
+
 
 
 
