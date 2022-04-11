@@ -43,6 +43,8 @@ const numberList =[1, 2, 3, 4, 5, 6]
 console.log('lista lenght', numberList.length);
 
 const btnGiocaOra =document.querySelector('#btn-gioca')
+const outputHumanN =document.getElementById('output-human');
+const outputPc =document.getElementById('output-pc');
 
 btnGiocaOra.addEventListener('click', function(){
 
