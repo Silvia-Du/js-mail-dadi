@@ -5,6 +5,8 @@
 4. stampare il messagio appropriato in pagina
 */
 
+
+
 //quando chiedo i dati? al clicc di un pulsante:
 //1. 2.
 const accessBtn =document.querySelector('button')
@@ -14,7 +16,26 @@ accessBtn.addEventListener('click', function(){
 
   const eMail = prompt('inserisci qui la tua e mail');
 
-  const UserName = prompt('inserisci il tuo user name')
+  const UserName = prompt('inserisci il tuo user Name, PS: prova in camel case il tuo nome e l\'iniziale del tuo cognome!')
 })
 
 //creare una lista utenti: creo un array
+
+const autorizedUser =
+['simoneT','giovanniP','stefanoC','mihaiB',
+'riccardoB',
+'manuelB',
+'brunoB',
+'guidoB',
+'pierluigiC',
+'enricoD',
+'silviaD',
+'carloDDM',
+'francescoE'];
+
+console.log(autorizedUser, autorizedUser.length);
+
+for(let i = 0; i< autorizedUser.length; i++){
+  
+  console.log(i, autorizedUser[i]);
+}
