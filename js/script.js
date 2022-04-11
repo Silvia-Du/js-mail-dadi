@@ -43,20 +43,21 @@ const numberList =[1, 2, 3, 4, 5, 6]
 console.log('lista lenght', numberList.length);
 
 const btnGiocaOra =document.querySelector('#btn-gioca')
-const outputHumanN =document.getElementById('output-human');
-const outputPc =document.getElementById('output-pc');
 
 btnGiocaOra.addEventListener('click', function(){
 
 
   let randomHuman = Math.floor(Math.random() * numberList.length);
   const numPlayerEstratto = numberList[randomHuman];
-  console.log('num human',numPlayerEstratto);
+  document.getElementById('output-human').innerHTML = numPlayerEstratto;
 
 
   let randomPc = Math.floor(Math.random() * numberList.length);
   const numPcEstratto = numberList[randomPc];
-  console.log('num pc',numPcEstratto);
+  document.getElementById('output-pc').innerHTML = numPcEstratto;
+
+
+  
 
 })
 
