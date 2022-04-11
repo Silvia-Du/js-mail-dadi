@@ -1,6 +1,7 @@
 body{
-  background-color: antiquewhite;
+  background-color: #EBEFFE;
   padding-top: 30px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .debug{
@@ -10,30 +11,33 @@ body{
 
 .mail,
 .dadi{
-  background-color: chocolate;
-  min-height: 200px;
+  background-color: #c6aee0;
   border-radius: 20px;
-  color: rgb(235, 228, 214);
+  color: #364182;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgb(72, 33, 124);
 }
 
 .sd-btn{
-  background-color: brown;
-  color: aliceblue;
+  background-color: #97498b;
+  color: white;
+  box-shadow: 5px 5px 10px rgb(100, 61, 148) inset;
   border-radius: 20px;
   padding: 10px 15px;
 }
 
 .output-mail{
   margin: 0 auto;
-  min-height: 100px;
+  padding: 20px 0;
   width: 60%;
   border-radius: 20px;
-  color: brown;
+  color: #364182;
   background-color: aliceblue;
+  display: none;
 }
 
 .output-dadi{
-  min-height: 200px;
+  min-height: 170px;
   width: 80%;
   margin: 0 auto;
   border-radius: 20px;
@@ -42,8 +46,9 @@ body{
 .number{
   width: 48%;
   border-radius: 20px;
-  border: 1px solid black;
-  background-color: rgb(180, 126, 230);
+  box-shadow: 5px 5px 10px rgb(129, 101, 63) inset;
+  background-color: #e68618;
+  color: white;
 }
 
 #output-human,
@@ -53,7 +58,18 @@ body{
 }
 
 .output-alert{
-  background-color: aliceblue;
-  color: brown;
+  min-height: 50px;
   border-radius: 20px;
+  background-color: aliceblue;
+  color: #364182;
+}
+
+.display-visible{
+  display: flex;
+}
+
+.sd-btn:hover{
+  opacity: 0.8;
+  color: white;
+  transition: 0.3s;
 }

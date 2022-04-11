@@ -9,7 +9,9 @@ const autorizedUser =['bim', 'bum', 'bam'];
 
 //chiedo i dati al clicc di un pulsante:
 //1. 2.
-const accessBtn =document.querySelector('#accesso')
+const accessBtn =document.querySelector('#accesso');
+const emailOutputBox =document.querySelector('.output-mail')
+const dadiOutputBox =document.querySelector('.output-alert')
 
 accessBtn.addEventListener('click', function(){
 
@@ -27,10 +29,10 @@ accessBtn.addEventListener('click', function(){
   };
 
   if(checkUser){
-    console.log('corretto');
-    document.getElementById('output-email').innerHTML = 'benvenuto!'
+    emailOutputBox.classList.add('display-visible');
+    document.getElementById('output-email').innerHTML = 'Benvenuto nella tua area privata!'
   }else{
-    console.log('sbagliato');
+    emailOutputBox.classList.add('display-visible');
     document.getElementById('output-email').innerHTML = 'iscriviti per accedere!'
   }
 
@@ -58,14 +60,14 @@ btnGiocaOra.addEventListener('click', function(){
 
   if(numPlayerEstratto === numPcEstratto){
     console.log('pareggio');
-    document.getElementById('game-result').innerHTML='pareggio';
+    document.getElementById('game-result').innerHTML='Noo hai Pareggiato!Riprova';
 
   }else if(numPlayerEstratto > numPcEstratto){
     console.log('hai vinto');
-    document.getElementById('game-result').innerHTML='hai vinto!'
+    document.getElementById('game-result').innerHTML='hai vinto! se vinci due volte di fila sei il più bello!'
   }else{
     console.log('hai perso');
-    document.getElementById('game-result').innerHTML='hai perso'
+    document.getElementById('game-result').innerHTML='Hai perso! Ritenta la fortuna!'
   }
 
 
