@@ -1,0 +1,26 @@
+body{
+  background-color: antiquewhite;
+  padding-top: 30px;
+}
+
+.debug{
+  border: 1px solid black;
+  background-color: rgba(210, 105, 30, 0.301);
+}
+
+.mail,
+.dadi{
+  background-color: chocolate;
+  height: 200px;
+  border-radius: 20px;
+  color: rgb(235, 228, 214);
+}
+
+.sd-btn{
+  background-color: brown;
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+
