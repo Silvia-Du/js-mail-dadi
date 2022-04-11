@@ -4,11 +4,6 @@ body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.debug{
-  border: 1px solid black;
-  background-color: rgba(210, 105, 30, 0.301);
-}
-
 .mail,
 .dadi{
   background-color: #c6aee0;

@@ -1,33 +1,27 @@
-/*Flusso di lavoro:
-1. chiedere all'utente di inserire un dato: e-mail.
-2. chidere all'utente la sua user name per    accedere.
-3. verificare che quella User sia presente        all'interno di una lista "autorizzati"
-4. stampare il messagio appropriato in pagina
-*/
+//EMAIL SECTION
 
 const autorizedUser =['bim', 'bum', 'bam'];
 
 //chiedo i dati al clicc di un pulsante:
-//1. 2.
 const accessBtn =document.querySelector('#accesso');
 const emailOutputBox =document.querySelector('.output-mail')
 const dadiOutputBox =document.querySelector('.output-alert')
 
+//Evento click
 accessBtn.addEventListener('click', function(){
-
+  //richiesta dati
   const userName = prompt('inserisci la tua user utente PS: prova in camel case il tuo nome e l\'iniziale del tuo cognome!')
 
   let checkUser = false;
-
+  //ciclo for per cercare l'uguaglianza
   for(let i = 0; i< autorizedUser.length; i++){
-
-    //let userCheck = false;
 
     if(userName === autorizedUser[i]){
       checkUser = true;
     }
   };
 
+  //utilizzo l'ugluaglianza verificata o meno per crare output adeguato
   if(checkUser){
     emailOutputBox.classList.add('display-visible');
     document.getElementById('output-email').innerHTML = 'Benvenuto nella tua area privata!'
@@ -38,26 +32,26 @@ accessBtn.addEventListener('click', function(){
 
 })
 
-//dadi
+//DADI SECTION
 
+//creo lista dalla quale estrarre i numeri
 const numberList =[1, 2, 3, 4, 5, 6]
-
-console.log('lista lenght', numberList.length);
-
 const btnGiocaOra =document.querySelector('#btn-gioca')
 
+//evento click
 btnGiocaOra.addEventListener('click', function(){
 
-
+  //genero & stampo numero random umano
   let randomHuman = Math.floor(Math.random() * numberList.length);
   const numPlayerEstratto = numberList[randomHuman];
   document.getElementById('output-human').innerHTML = numPlayerEstratto;
 
-
+  //genero & stampo numero random pc
   let randomPc = Math.floor(Math.random() * numberList.length);
   const numPcEstratto = numberList[randomPc];
   document.getElementById('output-pc').innerHTML = numPcEstratto;
 
+  //condizioni di vincita o perdita
   if(numPlayerEstratto === numPcEstratto){
     console.log('pareggio');
     document.getElementById('game-result').innerHTML='Noo hai Pareggiato!Riprova';
