@@ -56,8 +56,15 @@ btnGiocaOra.addEventListener('click', function(){
   const numPcEstratto = numberList[randomPc];
   document.getElementById('output-pc').innerHTML = numPcEstratto;
 
+  if(numPlayerEstratto === numPcEstratto){
+    console.log('pareggio');
 
-  
+  }else if(numPlayerEstratto > numPcEstratto){
+    console.log('hai vinto');
+  }else{
+    console.log('hai perso');
+  }
+
 
 })
 
