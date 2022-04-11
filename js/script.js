@@ -58,11 +58,14 @@ btnGiocaOra.addEventListener('click', function(){
 
   if(numPlayerEstratto === numPcEstratto){
     console.log('pareggio');
+    document.getElementById('game-result').innerHTML='pareggio';
 
   }else if(numPlayerEstratto > numPcEstratto){
     console.log('hai vinto');
+    document.getElementById('game-result').innerHTML='hai vinto!'
   }else{
     console.log('hai perso');
+    document.getElementById('game-result').innerHTML='hai perso'
   }
 
 

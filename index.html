@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <!-- email-section -->
   <div class="container mail mb-5 py-4">
     <div class="row">
       <div class="col-12 text-center mb-3">
@@ -26,25 +27,35 @@
     </div>
   </div>
 
+  <!-- dadi-section -->
   <div class="container dadi py-3">
-    <div class="row">
+    <div class="row justify-content-center">
+
       <div class="col text-center mb-4">
         <h2>Estrai il tuo numero fortunato!</h2>
       </div>
+
       <div class="col-12 text-center">
         <button id="btn-gioca" type="button" class="btn sd-btn mb-3">Gioca ora!</button>
+
         <div class="output-dadi d-flex justify-content-between">
+
           <div class="human number p-3">
             <h3>Il tuo numero fortunato &eacute;:</h3>
             <span id="output-human"></span>
           </div>
+
           <div class="pc number p-3">
             <h3>Il numero del banco &eacute;:</h3>
             <span id="output-pc"></span>
           </div>
-        </div>
+          
         </div>
       </div>
+      <div class="col-9 output-alert my-3 p-3 text-center">
+        <h3 id="game-result"></h3>
+      </div>
+
     </div>
   </div>
   
